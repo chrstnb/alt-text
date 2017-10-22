@@ -1,18 +1,23 @@
 ---
 layout: default
 ---
+# [](#main)What it is
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+**Images for Alt** is a Chrome extension that generates descriptive alt tags for
+HTML images. It also allows users to replace images with text, or remove images
+from the page.
 
-[Link to another page](another-page).
+# [](#how)How we made it
 
-There should be whitespace between paragraphs.
+We leverage Microsoft's [computer vision API](https://azure.microsoft.com/en-us/services/cognitive-services/) and its
+nifty caption creator.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+# [](#why)Why we made it
 
-# [](#header-1)Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+As lovers of web development, we know that conversations about accessibility
+often get pushed aside in favor of ones about the latest javascript library
+or how to make a page look awesome. It's unfortunate, but we hope that our
+speedy extension might make the problem of un-tagged images a little better.
 
 ## [](#header-2)Header 2
 
