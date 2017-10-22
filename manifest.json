@@ -14,14 +14,18 @@
         "storage",
         "*://*/*"
     ],
-
+    "icons": {"19": "icon.png",
+              "48": "icon48.png",
+              "128": "icon128.png"},
     "content_scripts": [
         {
             "matches": [
                 "*://*/*"
             ],
             "js": [
-                "process.js"
+                "jquery.js",
+                "process.js",
+                "removeImages.js"
             ],
             "css": [
                 "popupStyle.css"
