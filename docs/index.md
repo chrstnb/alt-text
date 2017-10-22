@@ -32,6 +32,5 @@ The HTML might look something like this:
 
 But with our Chrome extension, it will be updated to be this:
 ```html
-<img src="pug.jpg" alt="alt="Original caption: dog Generated caption: a dog looking at the camera
-">
+<img src="pug.jpg" alt="Original caption: dog Generated caption: a dog looking at the camera">
 ```
