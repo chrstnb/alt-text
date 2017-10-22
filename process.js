@@ -4,7 +4,6 @@ function parse() {
   for (var i = 0; i < elements.length; i++) {
     processImage(elements[i].src, elements[i]);
   }
-
 }
 
 function processImage(source, element) {
