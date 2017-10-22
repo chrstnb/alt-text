@@ -1,10 +1,9 @@
-function parse() {
-  var elements = document.getElementsByTagName("img")
+var elements = document.getElementsByTagName("img")
 
-  for (var i = 0; i < elements.length; i++) {
-    processImage(elements[i].src, elements[i]);
-  }
+for (var i = 0; i < elements.length; i++) {
+  processImage(elements[i].src, elements[i]);
 }
+
 
 function processImage(source, element) {
     var subscriptionKey = "20613855066847539021532e06e9ce11";
@@ -29,11 +28,11 @@ function processImage(source, element) {
     })
 
     .done(function(data) {
-        var ret= data.description.captions[0].text;
+        var caption = data.description.captions[0].text;
         if (element.alt != "") {
-          element.alt ="Original caption: " + element.alt + " Generated caption: " + ret;
+          element.alt ="Original caption: " + element.alt + "; Generated caption: " + caption;
         } else {
-          element.alt = "Generated caption: " + ret;
+          element.alt = "Generated caption: " + caption;
         }
     })
 
