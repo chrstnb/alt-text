@@ -18,7 +18,6 @@ function processImage(source, element) {
     };
 
     var sourceImageUrl = source;
-    document.querySelector("#sourceImage").src = sourceImageUrl;
 
     $.ajax({
         url: uriBase + "?" + $.param(params),
@@ -31,8 +30,12 @@ function processImage(source, element) {
     })
 
     .done(function(data) {
-        var ret= JSON.stringify(data.description.captions[0].text);
-        element.alt = ret;
+        var ret= data.description.captions[0].text;
+        if (element.alt != "") {
+          element.alt ="Original caption: " + element.alt + " Generated caption: " + ret;
+        } else {
+          element.alt = "Generated caption: " + ret;
+        }
     })
 
     .fail(function(jqXHR, textStatus, errorThrown) {
