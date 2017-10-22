@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-# [](#main)What it is
+## [](#main)What it is
 
 **Images for Alt** is a Chrome extension that generates descriptive alt tags for
 HTML images. It also allows users to replace images with text, or remove images
 from the page.
 
-# [](#how)How we made it
+## [](#how)How we made it
 
 We leverage Microsoft's [computer vision API](https://azure.microsoft.com/en-us/services/cognitive-services/) and its
 nifty caption creator.
 
-# [](#why)Why we made it
+## [](#why)Why we made it
 
 As lovers of web development, we know that conversations about accessibility
 often get pushed aside in favor of ones about the latest javascript library
