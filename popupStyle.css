@@ -1,0 +1,16 @@
+button {
+	padding: 10px, 10px, 10px, 10px;
+	border: solid red;
+}
+
+#sound {
+	border: solid yellow;
+}
+
+#display {
+	border: solid blue;
+}
+
+.hidden {
+	display: none;
+}

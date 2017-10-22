@@ -4,6 +4,17 @@
     "description": "Generates alt text for every image on the page, either by adding a descriptive caption alongside the existing one, or by adding one in the first place.
                     Also allows image removal for quicker page loading.",
     "version": "0.5",
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "*://*/*"
+    ],
+
     "content_scripts": [
         {
             "matches": [
@@ -11,6 +22,9 @@
             ],
             "js": [
                 "process.js"
+            ],
+            "css": [
+                "popupStyle.css"
             ],
             "run_at": "document_end"
         }
