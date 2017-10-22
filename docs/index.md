@@ -33,6 +33,6 @@ The HTML might look something like this:
 But with our Chrome extension, it will be updated to be this:
 alt="Original caption: pug Generated caption: a dog looking at the camera"
 ```html
-<img src="pug.jpg" alt="alt="Original caption: dog Generated caption: a dog looking at the camera"
+<img src="pug.jpg" alt="alt="Original caption: dog Generated caption: a dog looking at the camera
 ">
 ```
