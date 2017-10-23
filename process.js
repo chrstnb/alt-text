@@ -40,6 +40,6 @@ function processImage(source, element) {
         // Display error message.
         var errorString = (errorThrown === "") ? "Error. " : errorThrown + " (" + jqXHR.status + "): ";
         errorString += (jqXHR.responseText === "") ? "" : jQuery.parseJSON(jqXHR.responseText).message;
-        alert(errorString);
+        console.log(errorString);
     });
 };
