@@ -1,8 +1,7 @@
 {
 "manifest_version": 2,
     "name": "Images for Alt",
-    "description": "Generates alt text for every image on the page, either by adding a descriptive caption alongside the existing one, or by adding one in the first place.
-                    Also allows image removal for quicker page loading.",
+    "description": "Generates alt text for every image on the page, either by adding a descriptive caption alongside the existing one, or by adding one in the first place. Also allows image removal for quicker page loading.",
     "version": "0.5",
 
     "browser_action": {
@@ -17,15 +16,9 @@
 
     "content_scripts": [
         {
-            "matches": [
-                "*://*/*"
-            ],
-            "js": [
-                "process.js"
-            ],
-            "css": [
-                "popupStyle.css"
-            ],
+            "matches": ["*://*/*"],
+            "js": ["process.js", "jquery-3.2.1.min.js"],
+            "css": ["popupStyle.css"],
             "run_at": "document_end"
         }
     ]
